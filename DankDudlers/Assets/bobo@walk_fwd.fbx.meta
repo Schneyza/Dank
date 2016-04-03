@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: 3fabc97ef9b38a94291180b0484c337f
+timeCreated: 1459643474
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: chaw_jnt
+    100004: chin_jnt
+    100006: cranium_jnt
+    100008: eye_jnt
+    100010: Frank_smooth
+    100012: head_root_jnt
+    100014: left_ancle_jnt
+    100016: left_clavicle_jnt
+    100018: left_elbow_jnt
+    100020: left_foot_jnt
+    100022: left_hand_root_jnt
+    100024: left_heel_jnt
+    100026: left_hip_jnt
+    100028: left_index_low_jnt
+    100030: left_index_root_jnt
+    100032: left_index_tip_jnt
+    100034: left_index_up_jnt
+    100036: left_knee_jnt
+    100038: left_middle_low_jnt
+    100040: left_middle_root_jnt
+    100042: left_middle_tip_jnt
+    100044: left_middle_up_jnt
+    100046: left_pinky_high_jnt
+    100048: left_pinky_low
+    100050: left_pinky_root_jnt
+    100052: left_pinky_tip_jnt
+    100054: left_ring_low_jnt
+    100056: left_ring_root_jnt
+    100058: left_ring_tip_jnt
+    100060: left_ring_up_jnt
+    100062: left_shoulder_jnt
+    100064: left_thumb_middle_jnt
+    100066: left_thumb_root_jnt
+    100068: left_thumb_tip_jnt
+    100070: left_toe_jnt
+    100072: left_wrist_jnt
+    100074: lower_back_1_jnt
+    100076: lower_back_2_jnt
+    100078: lower_neck_jnt
+    100080: mid_back_jnt
+    100082: right_ancle_jnt
+    100084: right_clavicle_jnt
+    100086: right_elbow_jnt
+    100088: right_foot_jnt
+    100090: right_hand_root_jnt
+    100092: right_heel_jnt
+    100094: right_hip_jnt
+    100096: right_index_low_jnt
+    100098: right_index_root_jnt
+    100100: right_index_tip_jnt
+    100102: right_index_up_jnt
+    100104: right_knee_jnt
+    100106: right_middle_low_jnt
+    100108: right_middle_root_jnt
+    100110: right_middle_tip_jnt
+    100112: right_middle_up_jnt
+    100114: right_pinky_high_jnt
+    100116: right_pinky_low
+    100118: right_pinky_root_jnt
+    100120: right_pinky_tip_jnt
+    100122: right_ring_low_jnt
+    100124: right_ring_root_jnt
+    100126: right_ring_tip_jnt
+    100128: right_ring_up_jnt
+    100130: right_shoulder_jnt
+    100132: right_thumb_middle_jnt
+    100134: right_thumb_root_jnt
+    100136: right_thumb_tip_jnt
+    100138: right_toe_jnt
+    100140: right_wrist_jnt
+    100142: root_jnt
+    100144: upper_back_jnt
+    100146: upper_neck_jnt
+    400000: //RootNode
+    400002: chaw_jnt
+    400004: chin_jnt
+    400006: cranium_jnt
+    400008: eye_jnt
+    400010: Frank_smooth
+    400012: head_root_jnt
+    400014: left_ancle_jnt
+    400016: left_clavicle_jnt
+    400018: left_elbow_jnt
+    400020: left_foot_jnt
+    400022: left_hand_root_jnt
+    400024: left_heel_jnt
+    400026: left_hip_jnt
+    400028: left_index_low_jnt
+    400030: left_index_root_jnt
+    400032: left_index_tip_jnt
+    400034: left_index_up_jnt
+    400036: left_knee_jnt
+    400038: left_middle_low_jnt
+    400040: left_middle_root_jnt
+    400042: left_middle_tip_jnt
+    400044: left_middle_up_jnt
+    400046: left_pinky_high_jnt
+    400048: left_pinky_low
+    400050: left_pinky_root_jnt
+    400052: left_pinky_tip_jnt
+    400054: left_ring_low_jnt
+    400056: left_ring_root_jnt
+    400058: left_ring_tip_jnt
+    400060: left_ring_up_jnt
+    400062: left_shoulder_jnt
+    400064: left_thumb_middle_jnt
+    400066: left_thumb_root_jnt
+    400068: left_thumb_tip_jnt
+    400070: left_toe_jnt
+    400072: left_wrist_jnt
+    400074: lower_back_1_jnt
+    400076: lower_back_2_jnt
+    400078: lower_neck_jnt
+    400080: mid_back_jnt
+    400082: right_ancle_jnt
+    400084: right_clavicle_jnt
+    400086: right_elbow_jnt
+    400088: right_foot_jnt
+    400090: right_hand_root_jnt
+    400092: right_heel_jnt
+    400094: right_hip_jnt
+    400096: right_index_low_jnt
+    400098: right_index_root_jnt
+    400100: right_index_tip_jnt
+    400102: right_index_up_jnt
+    400104: right_knee_jnt
+    400106: right_middle_low_jnt
+    400108: right_middle_root_jnt
+    400110: right_middle_tip_jnt
+    400112: right_middle_up_jnt
+    400114: right_pinky_high_jnt
+    400116: right_pinky_low
+    400118: right_pinky_root_jnt
+    400120: right_pinky_tip_jnt
+    400122: right_ring_low_jnt
+    400124: right_ring_root_jnt
+    400126: right_ring_tip_jnt
+    400128: right_ring_up_jnt
+    400130: right_shoulder_jnt
+    400132: right_thumb_middle_jnt
+    400134: right_thumb_root_jnt
+    400136: right_thumb_tip_jnt
+    400138: right_toe_jnt
+    400140: right_wrist_jnt
+    400142: root_jnt
+    400144: upper_back_jnt
+    400146: upper_neck_jnt
+    4300000: Frank_smooth
+    7400000: walk_fwd
+    9500000: //RootNode
+    13700000: Frank_smooth
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: walk_fwd
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Frank_smooth
+        weight: 1
+      - path: root_jnt
+        weight: 1
+      - path: root_jnt/left_hip_jnt
+        weight: 1
+      - path: root_jnt/left_hip_jnt/left_knee_jnt
+        weight: 1
+      - path: root_jnt/left_hip_jnt/left_knee_jnt/left_ancle_jnt
+        weight: 1
+      - path: root_jnt/left_hip_jnt/left_knee_jnt/left_ancle_jnt/left_heel_jnt
+        weight: 1
+      - path: root_jnt/left_hip_jnt/left_knee_jnt/left_ancle_jnt/left_heel_jnt/left_foot_jnt
+        weight: 1
+      - path: root_jnt/left_hip_jnt/left_knee_jnt/left_ancle_jnt/left_heel_jnt/left_foot_jnt/left_toe_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_index_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_index_root_jnt/left_index_low_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_index_root_jnt/left_index_low_jnt/left_index_up_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_index_root_jnt/left_index_low_jnt/left_index_up_jnt/left_index_tip_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_middle_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_middle_root_jnt/left_middle_low_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_middle_root_jnt/left_middle_low_jnt/left_middle_up_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_middle_root_jnt/left_middle_low_jnt/left_middle_up_jnt/left_middle_tip_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_pinky_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_pinky_root_jnt/left_pinky_low
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_pinky_root_jnt/left_pinky_low/left_pinky_high_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_pinky_root_jnt/left_pinky_low/left_pinky_high_jnt/left_pinky_tip_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_ring_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_ring_root_jnt/left_ring_low_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_ring_root_jnt/left_ring_low_jnt/left_ring_up_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_ring_root_jnt/left_ring_low_jnt/left_ring_up_jnt/left_ring_tip_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_thumb_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_thumb_root_jnt/left_thumb_middle_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/left_clavicle_jnt/left_shoulder_jnt/left_elbow_jnt/left_wrist_jnt/left_hand_root_jnt/left_thumb_root_jnt/left_thumb_middle_jnt/left_thumb_tip_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/lower_neck_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/lower_neck_jnt/upper_neck_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/lower_neck_jnt/upper_neck_jnt/head_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/lower_neck_jnt/upper_neck_jnt/head_root_jnt/chaw_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/lower_neck_jnt/upper_neck_jnt/head_root_jnt/chaw_jnt/chin_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/lower_neck_jnt/upper_neck_jnt/head_root_jnt/cranium_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/lower_neck_jnt/upper_neck_jnt/head_root_jnt/eye_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_index_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_index_root_jnt/right_index_low_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_index_root_jnt/right_index_low_jnt/right_index_up_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_index_root_jnt/right_index_low_jnt/right_index_up_jnt/right_index_tip_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_middle_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_middle_root_jnt/right_middle_low_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_middle_root_jnt/right_middle_low_jnt/right_middle_up_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_middle_root_jnt/right_middle_low_jnt/right_middle_up_jnt/right_middle_tip_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_pinky_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_pinky_root_jnt/right_pinky_low
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_pinky_root_jnt/right_pinky_low/right_pinky_high_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_pinky_root_jnt/right_pinky_low/right_pinky_high_jnt/right_pinky_tip_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_ring_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_ring_root_jnt/right_ring_low_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_ring_root_jnt/right_ring_low_jnt/right_ring_up_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_ring_root_jnt/right_ring_low_jnt/right_ring_up_jnt/right_ring_tip_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_thumb_root_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_thumb_root_jnt/right_thumb_middle_jnt
+        weight: 1
+      - path: root_jnt/lower_back_1_jnt/lower_back_2_jnt/mid_back_jnt/upper_back_jnt/right_clavicle_jnt/right_shoulder_jnt/right_elbow_jnt/right_wrist_jnt/right_hand_root_jnt/right_thumb_root_jnt/right_thumb_middle_jnt/right_thumb_tip_jnt
+        weight: 1
+      - path: root_jnt/right_hip_jnt
+        weight: 1
+      - path: root_jnt/right_hip_jnt/right_knee_jnt
+        weight: 1
+      - path: root_jnt/right_hip_jnt/right_knee_jnt/right_ancle_jnt
+        weight: 1
+      - path: root_jnt/right_hip_jnt/right_knee_jnt/right_ancle_jnt/right_heel_jnt
+        weight: 1
+      - path: root_jnt/right_hip_jnt/right_knee_jnt/right_ancle_jnt/right_heel_jnt/right_foot_jnt
+        weight: 1
+      - path: root_jnt/right_hip_jnt/right_knee_jnt/right_ancle_jnt/right_heel_jnt/right_foot_jnt/right_toe_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: ce15725ea44a23744a832bd313a0e19e,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
