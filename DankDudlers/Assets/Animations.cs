@@ -16,7 +16,7 @@ public class Animations : MonoBehaviour {
 	void Update () {
         v = Input.GetAxis("Vertical");
         sprinting();
-        transform.Translate(Vector3.forward * (Time.deltaTime * v));
+        //transform.Translate(Vector3.forward * (Time.deltaTime * v));
         h = Input.GetAxis("Horizontal");
         transform.Rotate(Vector3.up * Time.deltaTime * 200 *h);
         /*if (Input.GetKey("a"))
