@@ -168,7 +168,16 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: root_jnt
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nInbetween bone default rotation found in this file
+      is different from the one found in the source avatar:\n\t'left_ancle_jnt' :
+      rotation error = 8.482426 deg\n\t'left_foot_jnt' : rotation error = 32.056675
+      deg\n\t'right_ancle_jnt' : rotation error = 16.950754 deg\n\nClip 'Take 001'
+      has import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'left_ancle_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'left_foot_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'right_ancle_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'right_foot_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -205,18 +214,18 @@ ModelImporter:
         curve:
           serializedVersion: 2
           curve:
-          - time: 0.016666668
-            value: 0.051874995
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-          - time: 0.98333335
-            value: -0.048749994
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-          preInfinity: 3
-          postInfinity: 3
+          - time: 0
+            value: 0
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 10
+          - time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 10
+          preInfinity: 2
+          postInfinity: 2
           rotationOrder: 0
       events: []
       transformMask:
