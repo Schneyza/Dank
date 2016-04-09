@@ -402,7 +402,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleRotations: 1
     optimizeGameObjects: 0
-    motionNodeName: 
+    motionNodeName: <Root Transform>
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -992,16 +992,16 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: left_clavicle_jnt
-      humanName: LeftShoulder
+    - boneName: right_clavicle_jnt
+      humanName: RightShoulder
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: right_clavicle_jnt
-      humanName: RightShoulder
+    - boneName: left_clavicle_jnt
+      humanName: LeftShoulder
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}
@@ -1788,13 +1788,13 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: root
-      position: {x: -0, y: 0.14118041, z: -0.013442148}
-      rotation: {x: 0.082480535, y: 0, z: -0, w: 0.9965927}
+      position: {x: -0, y: 0.138, z: -0.013442148}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: back1
-      position: {x: 2.4651902e-33, y: 0.008706549, z: 1.1546319e-16}
-      rotation: {x: -0.026882559, y: -1.1940394e-18, z: -3.1197782e-17, w: 0.9996386}
+      position: {x: 2.4651902e-33, y: 0.011768495, z: 0.0014313478}
+      rotation: {x: 0.05565976, y: 9.354383e-18, z: -3.0745605e-17, w: 0.9984498}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: back2
@@ -1839,7 +1839,7 @@ ModelImporter:
       transformModified: 1
     - name: left_clavicle_jnt
       position: {x: -0.012973787, y: 0.009143216, z: 0.010891593}
-      rotation: {x: -0.2891986, y: 0.20685086, z: 0.54374444, w: 0.76020974}
+      rotation: {x: -0.2891986, y: 0.20685081, z: 0.54374427, w: 0.7602099}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: left_shoulder_jnt
@@ -1869,7 +1869,7 @@ ModelImporter:
       transformModified: 1
     - name: right_clavicle_jnt
       position: {x: 0.012973799, y: 0.009143181, z: 0.010891587}
-      rotation: {x: 0.76020986, y: -0.5437444, z: 0.20685074, w: 0.28919873}
+      rotation: {x: 0.7602098, y: -0.5437444, z: 0.20685072, w: 0.28919864}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: right_shoulder_jnt
@@ -1899,17 +1899,17 @@ ModelImporter:
       transformModified: 1
     - name: left_hip_jnt
       position: {x: -0.031160584, y: -0.0023115862, z: 0.0029697146}
-      rotation: {x: 0.43700498, y: 0.55590165, z: 0.43700498, w: 0.55590165}
+      rotation: {x: 0.4489928, y: 0.546265, z: 0.4489928, w: 0.546265}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: left_knee_jnt
       position: {x: -0.065617844, y: -4.9960034e-18, z: 1.1725936e-17}
-      rotation: {x: 0.9959812, y: 0.089562505, z: 5.484122e-18, w: 6.098626e-17}
+      rotation: {x: 0.97112954, y: 0.23855276, z: 2.1025239e-17, w: 5.7887965e-17}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: left_ankle_jnt
       position: {x: -0.04703388, y: -3.4416914e-17, z: -8.185086e-18}
-      rotation: {x: 0.9354639, y: 0.3534222, z: -3.7917585e-17, w: -5.1131233e-17}
+      rotation: {x: 0.8997512, y: 0.43640327, z: 1.4474265e-15, w: -1.0168796e-15}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: left_ball_jnt
@@ -1924,22 +1924,22 @@ ModelImporter:
       transformModified: 1
     - name: right_hip_jnt
       position: {x: 0.031160599, y: -0.002311647, z: 0.002969687}
-      rotation: {x: 0.99290663, y: 5.426973e-18, z: 1.2234439e-16, w: 0.11889698}
+      rotation: {x: 0.9952578, y: 8.8541875e-11, z: 1.1098795e-11, w: 0.09727244}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: right_knee_jnt
       position: {x: 1.7763568e-17, y: 0.06561776, z: -7.2719605e-17}
-      rotation: {x: 0.08956319, y: -0.000000012198261, z: 0.0000000010969236, w: 0.99598116}
+      rotation: {x: 0.23855329, y: -0.0000000127773605, z: -6.7485595e-10, w: 0.9711294}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: right_ankle_jnt
       position: {x: 2.0554086e-10, y: 0.047033872, z: 3.9968027e-17}
-      rotation: {x: -0.38983107, y: -0.000000007887248, z: 0.000000018631813, w: 0.9208864}
+      rotation: {x: -0.47134793, y: -0.000000009299416, z: 0.000000011738975, w: 0.88194734}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: right_ball_jnt
       position: {x: 4.438248e-10, y: 0.023952741, z: 0}
-      rotation: {x: -0.39737156, y: 0, z: -0, w: 0.9176578}
+      rotation: {x: -0.39737156, y: 8.807594e-10, z: -3.8139353e-10, w: 0.9176578}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: right_toe_jnt
@@ -1948,6 +1948,56 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: superMover_control
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: body_control
+      position: {x: -0, y: 0.14118041, z: -0.013442148}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: backBend_control
+      position: {x: -5.664083e-18, y: 0.037933737, z: 0.0039323624}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: upper_back_control
+      position: {x: -1.5090421e-17, y: 0.07871875, z: -0.0059844945}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: left_clavicle_control
+      position: {x: -0.035912197, y: -0.0032289182, z: 0.0048929635}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: right_clavicle_control
+      position: {x: 0.035912197, y: -0.0032288963, z: 0.0048929816}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: lower_back_control
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: left_hand_offset
+      position: {x: -0.1420373, y: 0.2552412, z: -0.0106013175}
+      rotation: {x: 0.56070584, y: -0.38357145, z: 0.41432154, w: 0.6056563}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: left_hand_control
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: right_hand_offset
+      position: {x: 0.14203696, y: 0.2552873, z: -0.0106013}
+      rotation: {x: -0.17438371, y: -0.086417116, z: 0.6959853, w: 0.69117785}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: right_hand_control
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -1966,7 +2016,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: c9f345650179a034b8f3ce9f286c62db,
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 52538a71754e0e442970d89653deaf02,
     type: 3}
   animationType: 3
   humanoidOversampling: 1
