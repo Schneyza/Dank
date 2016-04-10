@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AnimateWeapon.cs" />
     <Compile Include="Assets\Scripts\Animations.cs" />
+    <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
