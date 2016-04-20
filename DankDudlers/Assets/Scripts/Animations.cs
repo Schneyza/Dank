@@ -6,15 +6,21 @@ using System.Collections;
 public class Animations : MonoBehaviour {
     Animator anim;
     GameObject m_Camera;
+    public GameObject m_Weapon;
+    GameObject char_back;
+    GameObject char_rightHand;
     float v;
     float h;
     float sprint;
     public float lookDir;
+    bool weapon = false;
 
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
         m_Camera = GameObject.FindGameObjectWithTag("MainCamera");
+        char_rightHand = GameObject.FindGameObjectWithTag("Weaponhand");
+        char_back = GameObject.FindGameObjectWithTag("Weaponback");
         lookDir = 0;
 	}
 	
@@ -24,6 +30,11 @@ public class Animations : MonoBehaviour {
     void Update()
     {
         HandleMovAndRot();
+        if (Input.GetButtonDown("Draw") && !weapon)
+        {
+            weapon = true;
+        
+        }
         
     }
 
@@ -32,6 +43,7 @@ public class Animations : MonoBehaviour {
         anim.SetFloat("Walk", v);
         anim.SetFloat("Turn", h);
         anim.SetFloat("Sprint", sprint);
+        anim.SetBool("Drawn", weapon);
     }
 
     void sprinting()
@@ -65,5 +77,11 @@ public class Animations : MonoBehaviour {
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(transform.rotation.x, angle, transform.rotation.z), 20f);
 
         }
+    }
+
+    void DrawWeapon()
+    {
+        m_Weapon.transform.parent = null;
+        m_Weapon.transform.SetParent(char_rightHand.transform);
     }
 }
