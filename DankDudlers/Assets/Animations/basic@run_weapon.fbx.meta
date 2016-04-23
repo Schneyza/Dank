@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ade0597290f87d647b9c531062c489f5
-timeCreated: 1461177832
+guid: 9db443889b80a4d4db9909e56f13acef
+timeCreated: 1461434389
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -407,7 +407,7 @@ ModelImporter:
     4300006: right_arm
     4300008: torso
     4300010: head
-    7400000: draw
+    7400000: run_weapon
     9500000: //RootNode
     13700000: head
     13700002: left_arm
@@ -428,8 +428,15 @@ ModelImporter:
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
       might lower retargeting quality:\nNote: Activate translation DOF on avatar to
-      improve retargeting quality.\n\t'right_forearm_jnt' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n"
+      improve retargeting quality.\n\t'back1' is inbetween humanoid transforms and
+      has rotation animation that will be discarded.\n\t'back2' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'back4' is
+      inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'back6'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'left_forearm_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'right_forearm_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'left_ball_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'right_ball_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -440,21 +447,21 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: draw
+      name: run_weapon
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 100
+      lastFrame: 240
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
+      loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
@@ -462,15 +469,7 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.4
-        functionName: DrawWeapon
-        data: 
-        objectReferenceParameter: {fileID: 177236, guid: 43162ede66eeaaf438d08d657218d2f6,
-          type: 2}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask:
       - path: 
         weight: 1

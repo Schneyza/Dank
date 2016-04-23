@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ade0597290f87d647b9c531062c489f5
-timeCreated: 1461177832
+guid: c489ffa56aded7c4e8e0e9073d924a24
+timeCreated: 1461435221
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -407,7 +407,7 @@ ModelImporter:
     4300006: right_arm
     4300008: torso
     4300010: head
-    7400000: draw
+    7400000: sheathe
     9500000: //RootNode
     13700000: head
     13700002: left_arm
@@ -440,10 +440,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: draw
+      name: sheathe
       takeName: Take 001
-      firstFrame: 1
-      lastFrame: 100
+      firstFrame: 100
+      lastFrame: 200
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -463,8 +463,8 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.4
-        functionName: DrawWeapon
+      - time: 0.6075
+        functionName: SheatheWeapon
         data: 
         objectReferenceParameter: {fileID: 177236, guid: 43162ede66eeaaf438d08d657218d2f6,
           type: 2}

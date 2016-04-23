@@ -12,7 +12,7 @@ public class Animations : MonoBehaviour {
     float v;
     float h;
     float sprint;
-    public float lookDir;
+    float lookDir;
     bool weapon = false;
 
     // Use this for initialization
@@ -30,11 +30,8 @@ public class Animations : MonoBehaviour {
     void Update()
     {
         HandleMovAndRot();
-        if (Input.GetButtonDown("Draw") && !weapon)
-        {
-            weapon = true;
+        HandleWeapon();
         
-        }
         
     }
 
@@ -43,12 +40,11 @@ public class Animations : MonoBehaviour {
         anim.SetFloat("Walk", v);
         anim.SetFloat("Turn", h);
         anim.SetFloat("Sprint", sprint);
-        anim.SetBool("Drawn", weapon);
     }
 
     void sprinting()
     {
-        if (Input.GetButton("Sprint") || Input.GetButton("360_rb"))
+        if (Input.GetButton("360_rb") || Input.GetButton("360_rb"))
         {
             sprint = 0.2f;
         }
@@ -78,10 +74,34 @@ public class Animations : MonoBehaviour {
 
         }
     }
+    void HandleWeapon()
+    {
+        if (Input.GetButtonDown("360_Y") && !weapon)
+        {
+            weapon = true;
+            //triggert Animationsübergang und dadurch Aufruf von DrawWeapon(); kein manueller Aufruf nötig!
+            anim.SetBool("Drawn", true);
+        }
+        if (Input.GetButtonDown("360_X") && weapon)
+        {
+            weapon = false;
+            //triggert Animationsübergang und dadurch Aufruf von SheatheWeapon(); kein manueller Aufruf nötig!
+            anim.SetBool("Drawn", false);
+        }
+    }
 
     void DrawWeapon()
     {
+        
         m_Weapon.transform.parent = null;
         m_Weapon.transform.SetParent(char_rightHand.transform);
+        //kind of a hack, because there is no idel animation with weapon yet
+        //anim.SetBool("Drawn", false);
+    }
+    void SheatheWeapon()
+    {
+        
+        m_Weapon.transform.parent = null;
+        m_Weapon.transform.SetParent(char_back.transform);
     }
 }
