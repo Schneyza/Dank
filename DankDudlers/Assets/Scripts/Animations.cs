@@ -14,6 +14,8 @@ public class Animations : MonoBehaviour {
     float sprint;
     float lookDir;
     bool weapon = false;
+    bool attack_vert = false;
+    bool attack_hor = false;
 
     // Use this for initialization
     void Start () {
@@ -40,6 +42,8 @@ public class Animations : MonoBehaviour {
         anim.SetFloat("Walk", v);
         anim.SetFloat("Turn", h);
         anim.SetFloat("Sprint", sprint);
+        anim.SetBool("attack_vert", attack_vert);
+        anim.SetBool("attack_hor", attack_hor);
     }
 
     void sprinting()
@@ -76,7 +80,9 @@ public class Animations : MonoBehaviour {
     }
     void HandleWeapon()
     {
-        if (Input.GetButtonDown("360_Y") && !weapon)
+        attack_vert = Input.GetButton("360_Y");
+        attack_hor = Input.GetButton("360_B");
+        if (attack_vert && !weapon)
         {
             weapon = true;
             //triggert Animationsübergang und dadurch Aufruf von DrawWeapon(); kein manueller Aufruf nötig!
