@@ -25,6 +25,8 @@ public class basicCharController : MonoBehaviour {
     bool attack_hor = false;
     //shall character use currently equipped item? NOTE: no info about the item contained here
     bool use_item = false;
+    //should character roll?
+    bool roll = false;
 
     // Use this for initialization
     void Start () {
@@ -49,6 +51,7 @@ public class basicCharController : MonoBehaviour {
         anim.SetFloat("Sprint", sprint);
         anim.SetBool("attack_vert", attack_vert);
         anim.SetBool("attack_hor", attack_hor);
+        anim.SetBool("Roll", roll);
     }
 
     //check if the character is printing
@@ -93,6 +96,7 @@ public class basicCharController : MonoBehaviour {
         attack_vert = Input.GetButton("360_Y");
         attack_hor = Input.GetButton("360_B");
         use_item = Input.GetButton("360_X");
+        roll = Input.GetButton("360_A");
         //check if Draw Weapon
         if (attack_vert && !weapon)
         {
