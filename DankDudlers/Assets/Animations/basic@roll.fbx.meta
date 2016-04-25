@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 7c4dafb843452df4aada686125f08be7
-timeCreated: 1461521462
+guid: 95939b54d988b7b4bbe210ae36e338af
+timeCreated: 1461567429
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -467,7 +467,23 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.09390863
+        functionName: scaleCollider
+        data: 
+        objectReferenceParameter: {fileID: 177236, guid: 43162ede66eeaaf438d08d657218d2f6,
+          type: 2}
+        floatParameter: 0.2
+        intParameter: 0
+        messageOptions: 0
+      - time: 0
+        functionName: freezeMovement
+        data: 
+        objectReferenceParameter: {fileID: 177236, guid: 43162ede66eeaaf438d08d657218d2f6,
+          type: 2}
+        floatParameter: 0.8
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1

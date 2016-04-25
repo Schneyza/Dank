@@ -7,26 +7,24 @@ public class basicCharController : MonoBehaviour {
     Animator anim;
     GameObject m_Camera;
     public GameObject m_Weapon;
-    //Point where weapon is attached to character's back
-    GameObject char_back;
-    //Point where weapon is attached to character's hand
-    GameObject char_rightHand;
-    //Vertical Movement
-    float v;
-    //Horizontal Movement
-    float h;
+    CapsuleCollider m_Capsule;
+    float m_CapsuleHeight;
+    Vector3 m_CapsuleCenter;
+    GameObject char_back;       //Point where weapon is attached to character's back
+    GameObject char_rightHand;  //Point where weapon is attached to character's hand
+
+    
+    float v;                     //Vertical Movement
+    float h;                     //Horizontal Movement
     float sprint;
     float lookDir;
-    //isWeapon drawn?
-    bool weapon = false;
-    //use vertical Attack? (could probably use refactring)
+    bool weapon = false;        //isWeapon drawn?
     bool attack_vert = false;
-    //use horizontal Attack? (could probably use refactoring)
     bool attack_hor = false;
-    //shall character use currently equipped item? NOTE: no info about the item contained here
     bool use_item = false;
-    //should character roll?
     bool roll = false;
+    bool rightBumper;           //blocking or sprinting
+    bool moveable = true;       //can character move and rotate?
 
     // Use this for initialization
     void Start () {
@@ -34,12 +32,18 @@ public class basicCharController : MonoBehaviour {
         m_Camera = GameObject.FindGameObjectWithTag("MainCamera");
         char_rightHand = GameObject.FindGameObjectWithTag("Weaponhand");
         char_back = GameObject.FindGameObjectWithTag("Weaponback");
+        m_Capsule = GetComponent<CapsuleCollider>();
+        m_CapsuleHeight = m_Capsule.height;
+        m_CapsuleCenter = m_Capsule.center;
         lookDir = 0;
 	}
 
     void Update()
     {
-        HandleMovAndRot();
+        if (moveable)
+        {
+            HandleMovAndRot();
+        }
         HandleWeapon(); 
     }
 
@@ -48,24 +52,13 @@ public class basicCharController : MonoBehaviour {
         //set different variables in the AnimationController, that trigger animation transitions
         anim.SetFloat("Walk", v);
         anim.SetFloat("Turn", h);
-        anim.SetFloat("Sprint", sprint);
+        anim.SetBool("rightBumper", rightBumper);
         anim.SetBool("attack_vert", attack_vert);
         anim.SetBool("attack_hor", attack_hor);
         anim.SetBool("Roll", roll);
     }
 
-    //check if the character is printing
-    void sprinting()
-    {
-        if (Input.GetButton("360_rb"))
-        {
-            sprint = 0.2f;
-        }
-        else
-        {
-            sprint = 0.0f;
-        }
-    }
+    
 
     void HandleMovAndRot()
     {
@@ -73,7 +66,6 @@ public class basicCharController : MonoBehaviour {
         v = Input.GetAxis("Vertical");
         h = Input.GetAxis("Horizontal");
         //check if character is sprinting
-        sprinting();
         //determine rotation that the camera is facing, when camera angel is changing
         if (Input.GetKey(KeyCode.Mouse1))
         {
@@ -97,6 +89,8 @@ public class basicCharController : MonoBehaviour {
         attack_hor = Input.GetButton("360_B");
         use_item = Input.GetButton("360_X");
         roll = Input.GetButton("360_A");
+        //NOTE: next line handles sprinting & blocking+
+        rightBumper = Input.GetButton("360_rb");
         //check if Draw Weapon
         if (attack_vert && !weapon)
         {
@@ -136,10 +130,30 @@ public class basicCharController : MonoBehaviour {
         m_Weapon.transform.parent = null;
         m_Weapon.transform.SetParent(char_back.transform);
     }
+    
     //resets item categorie, so that it is not constantly used
     IEnumerator resetItem()
     {
         yield return new WaitForSeconds(0.2f);
         anim.SetInteger("item", 0);
+    }
+
+    //scales down the size of the collider will rolling, triggered by rolling animation
+    IEnumerator scaleCollider(float animDur)
+    {
+        m_Capsule.height = m_Capsule.height /2f;
+        m_Capsule.center = m_Capsule.center / 2f;
+        yield return new WaitForSeconds(animDur);
+        m_Capsule.height = m_CapsuleHeight;
+        m_Capsule.center = m_CapsuleCenter;
+    }
+
+    //makes character unable to rotate during animation, called by animations
+    //NOTE: not a nice way of doing, would be nicer if done with "while anim.getcurrentanimatorstate(0).isName" or something like that
+    IEnumerator freezeMovement(float animDur)
+    {
+        moveable = false;
+        yield return new WaitForSeconds(animDur);
+        moveable = true;
     }
 }

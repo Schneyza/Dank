@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: c489ffa56aded7c4e8e0e9073d924a24
-timeCreated: 1461435221
+guid: e00b5a52dbaddc741a16e7c4392c313c
+timeCreated: 1461568891
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -407,7 +407,7 @@ ModelImporter:
     4300006: right_arm
     4300008: torso
     4300010: head
-    7400000: sheathe
+    7400000: block
     9500000: //RootNode
     13700000: head
     13700002: left_arm
@@ -426,10 +426,7 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
-      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
-      improve retargeting quality.\n\t'right_forearm_jnt' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -440,21 +437,21 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: sheathe
+      name: block
       takeName: Take 001
-      firstFrame: 100
-      lastFrame: 200
+      firstFrame: 1
+      lastFrame: 12
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
+      loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
@@ -463,20 +460,12 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.6075
-        functionName: SheatheWeapon
-        data: 
-        objectReferenceParameter: {fileID: 177236, guid: 43162ede66eeaaf438d08d657218d2f6,
-          type: 2}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
       - time: 0
         functionName: freezeMovement
         data: 
         objectReferenceParameter: {fileID: 177236, guid: 43162ede66eeaaf438d08d657218d2f6,
           type: 2}
-        floatParameter: 1.35
+        floatParameter: 0.45
         intParameter: 0
         messageOptions: 0
       transformMask:

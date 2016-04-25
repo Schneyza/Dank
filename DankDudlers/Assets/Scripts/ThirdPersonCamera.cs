@@ -5,9 +5,13 @@ public class ThirdPersonCamera : MonoBehaviour {
     public float smooth = 1.5f;
     public float rotateSpeed = 50f;
     public Transform player;
-    public float test;
     private Vector3 relCamPos;
     private Vector3 newPos;
+    float lb_dur;                   //how long has left bumper been pressed
+    public float angleY;
+    public float angleX;
+    bool block_cam = false;
+    public float test;
     
 
     void Awake()
@@ -21,14 +25,18 @@ public class ThirdPersonCamera : MonoBehaviour {
 
     void FixedUpdate()
     {
-        HandleMovement();
-        HandleRotation();
+        test = relCamPos.magnitude;
+        
+        if (!block_cam)  
+        {
+            HandleMovement();
+            HandleRotation();
+        }
     }
 
     void HandleMovement()
     {
         newPos = player.position + relCamPos;
-        //transform.position = Vector3.Lerp(transform.position, newPos, smooth * Time.deltaTime);
         transform.position = newPos;
     }
 
@@ -65,5 +73,34 @@ public class ThirdPersonCamera : MonoBehaviour {
 
             relCamPos = transform.position - player.position;
         }
+
+        if (Input.GetButton("360_lb"))
+        {
+            lb_dur += Time.deltaTime;
+        }
+        if (Input.GetButtonUp("360_lb"))
+        {
+            if(lb_dur < 0.4)
+            {
+                angleY = transform.rotation.eulerAngles.y - player.rotation.eulerAngles.y;
+                angleX = transform.rotation.eulerAngles.x - player.rotation.eulerAngles.x;
+                StartCoroutine(focusCamera());
+            }
+            lb_dur = 0;
+        }
+    }
+    IEnumerator focusCamera()
+    {
+        block_cam = true;
+        for(int i = 0; i < 5; i++)
+        {
+            newPos = player.position + relCamPos;
+            transform.position = newPos;
+            transform.RotateAround(player.position, Vector3.up, (-angleY) / 5);
+            transform.RotateAround(player.position, transform.right, (24 - angleX)/5);
+            relCamPos = transform.position - player.position;
+            yield return null;
+        }
+        block_cam = false;
     }
 }

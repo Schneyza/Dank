@@ -471,6 +471,14 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0
+        functionName: freezeMovement
+        data: 
+        objectReferenceParameter: {fileID: 177236, guid: 43162ede66eeaaf438d08d657218d2f6,
+          type: 2}
+        floatParameter: 1.35
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1

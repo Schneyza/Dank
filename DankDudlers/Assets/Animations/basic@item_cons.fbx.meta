@@ -466,7 +466,15 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.0025380717
+        functionName: freezeMovement
+        data: 
+        objectReferenceParameter: {fileID: 177236, guid: 43162ede66eeaaf438d08d657218d2f6,
+          type: 2}
+        floatParameter: 1.4
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
