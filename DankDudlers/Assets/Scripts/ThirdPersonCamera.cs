@@ -8,10 +8,7 @@ public class ThirdPersonCamera : MonoBehaviour {
     private Vector3 relCamPos;
     private Vector3 newPos;
     float lb_dur;                   //how long has left bumper been pressed
-    public float angleY;
-    public float angleX;
     bool block_cam = false;
-    public float test;
     
 
     void Awake()
@@ -25,7 +22,6 @@ public class ThirdPersonCamera : MonoBehaviour {
 
     void FixedUpdate()
     {
-        test = relCamPos.magnitude;
         
         if (!block_cam)  
         {
@@ -74,6 +70,7 @@ public class ThirdPersonCamera : MonoBehaviour {
             relCamPos = transform.position - player.position;
         }
 
+        //Focus Camera behind player if Left Bumper is pressed for a very short time
         if (Input.GetButton("360_lb"))
         {
             lb_dur += Time.deltaTime;
@@ -82,14 +79,18 @@ public class ThirdPersonCamera : MonoBehaviour {
         {
             if(lb_dur < 0.4)
             {
-                angleY = transform.rotation.eulerAngles.y - player.rotation.eulerAngles.y;
-                angleX = transform.rotation.eulerAngles.x - player.rotation.eulerAngles.x;
-                StartCoroutine(focusCamera());
+                //calculate angle by which the camera has to rotate in order to reach original position
+                float angleY = transform.rotation.eulerAngles.y - player.rotation.eulerAngles.y;
+                float angleX = transform.rotation.eulerAngles.x - player.rotation.eulerAngles.x;
+                //call function that actually moves the camera
+                StartCoroutine(focusCamera(angleY, angleX));
             }
             lb_dur = 0;
         }
     }
-    IEnumerator focusCamera()
+    //moves camera back to inital position behind player
+    //NOTE coroutine is executed every, so normal camera movement which is handled in FixedUpdate has to be blocked for the duration of the coroutine!
+    IEnumerator focusCamera(float angleY, float angleX)
     {
         block_cam = true;
         for(int i = 0; i < 5; i++)
