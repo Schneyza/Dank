@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ItemCollection>
+  <Items>
+    <Item id="0">
+      <ItemName>Potion</ItemName>
+      <Description>Heals a small amount of HP</Description>
+      <Rarity>RAR1</Rarity>
+      <Amount>1</Amount>
+      <TypeString>consumable</TypeString>
+      <SpriteString>P_Green02</SpriteString>
+    </Item>
+    <Item id="1">
+      <ItemName>Mega Potion</ItemName>
+      <Description>Heals a moderate amount of HP</Description>
+      <Rarity>RAR2</Rarity>
+      <Amount>1</Amount>
+      <TypeString>consumable</TypeString>
+      <SpriteString>P_Green03</SpriteString>
+    </Item>
+    <Item id="2">
+      <ItemName>Top Potion</ItemName>
+      <Description>Increases maximum HP and fully heals HP</Description>
+      <Rarity>RAR4</Rarity>
+      <Amount>1</Amount>
+      <TypeString>consumble</TypeString>
+      <SpriteString>P_Green01</SpriteString>
+    </Item>
+  </Items>
+</ItemCollection>
