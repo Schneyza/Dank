@@ -9,8 +9,7 @@ public class ItemContainer {
 
     [XmlArray("Items")]
     [XmlArrayItem("Item")]
-    public List<Item> items = new List<Item>();
-
+    public List<Xml_Item> items = new List<Xml_Item>();
     public static ItemContainer Load(string path)
     {
         TextAsset _xml = Resources.Load<TextAsset>(path);
@@ -22,7 +21,10 @@ public class ItemContainer {
         ItemContainer items = serializer.Deserialize(reader) as ItemContainer;
 
         reader.Close();
-
+        
         return items;
     }
+
+    
+
 }
