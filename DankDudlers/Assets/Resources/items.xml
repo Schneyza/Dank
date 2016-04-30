@@ -27,7 +27,7 @@
     </Item>
     <Item id="100">
       <ItemName>Dummy00</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy0 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -35,7 +35,7 @@
     </Item>
     <Item id="101">
       <ItemName>Dummy01</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy1 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -43,7 +43,7 @@
     </Item>
     <Item id="102">
       <ItemName>Dummy02</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy2 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -51,7 +51,7 @@
     </Item>
     <Item id="103">
       <ItemName>Dummy03</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy3 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -59,7 +59,7 @@
     </Item>
     <Item id="104">
       <ItemName>Dummy04</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy4 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -67,7 +67,7 @@
     </Item>
     <Item id="105">
       <ItemName>Dummy05</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy5 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -75,7 +75,7 @@
     </Item>
     <Item id="106">
       <ItemName>Dummy06</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy6 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -83,7 +83,7 @@
     </Item>
     <Item id="107">
       <ItemName>Dummy07</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy7 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -91,7 +91,7 @@
     </Item>
     <Item id="108">
       <ItemName>Dummy08</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy8 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -99,7 +99,7 @@
     </Item>
     <Item id="109">
       <ItemName>Dummy09</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy9 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -107,7 +107,7 @@
     </Item>
     <Item id="110">
       <ItemName>Dummy10</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy10 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -115,7 +115,7 @@
     </Item>
     <Item id="111">
       <ItemName>Dummy11</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy11 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -123,7 +123,7 @@
     </Item>
     <Item id="112">
       <ItemName>Dummy12</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy12 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -131,7 +131,7 @@
     </Item>
     <Item id="113">
       <ItemName>Dummy13</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy13 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -139,7 +139,7 @@
     </Item>
     <Item id="114">
       <ItemName>Dummy14</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy14 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -147,7 +147,7 @@
     </Item>
     <Item id="115">
       <ItemName>Dummy15</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy15 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -155,7 +155,7 @@
     </Item>
     <Item id="116">
       <ItemName>Dummy16</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy16 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -163,7 +163,7 @@
     </Item>
     <Item id="117">
       <ItemName>Dummy17</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy17 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -171,7 +171,7 @@
     </Item>
     <Item id="118">
       <ItemName>Dummy18</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy18 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -179,7 +179,7 @@
     </Item>
     <Item id="119">
       <ItemName>Dummy19</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy19 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -187,7 +187,7 @@
     </Item>
     <Item id="120">
       <ItemName>Dummy20</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy20 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -195,7 +195,7 @@
     </Item>
     <Item id="121">
       <ItemName>Dummy21</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy21 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -203,7 +203,7 @@
     </Item>
     <Item id="122">
       <ItemName>Dummy22</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy22 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
@@ -211,12 +211,11 @@
     </Item>
     <Item id="123">
       <ItemName>Dummy23</ItemName>
-      <Description>Dummy Item to fill up the inventory</Description>
+      <Description>Dummy23 Item to fill up the inventory</Description>
       <Rarity>RAR0</Rarity>
       <Amount>1</Amount>
       <TypeString>consumble</TypeString>
       <SpriteString>I_C_Apple</SpriteString>
     </Item>
-    
   </Items>
 </ItemCollection>
