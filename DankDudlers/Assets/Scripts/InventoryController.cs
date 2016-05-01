@@ -15,7 +15,7 @@ public class InventoryController : MonoBehaviour
     public Vector2 windowSize;
 
     //Other Variables
-    GameObject[] slotArray;
+    public GameObject[] slotArray;
     Transform selectedSlot;
     Transform originalSlot;
     Transform originalItem;
@@ -39,22 +39,21 @@ public class InventoryController : MonoBehaviour
 
         //create slots
         createSlots();
-        
-    }
-    // Use this for initialization
-    void Start()
-    {
-        //fill inventory with dummy items
-        //for (int i = 100; i < 124; i++)
-        //{
-        //    addItem(i);
-        //}
         addItem("Potion");
         addItem("Mega Potion", 5);
         addItem(2);
         addItem(100, 4);
+        //fill inventory with dummy items
+        for (int i = 100; i < 124; i++)
+        {
+            addItem(i);
+        }
 
         updateDetails();
+    }
+    // Use this for initialization
+    void Start()
+    {
 
     }
 
@@ -77,7 +76,7 @@ public class InventoryController : MonoBehaviour
             dropItem();
             updateDetails();
         }
-        if(Input.GetButtonDown("360_Y") && !swapping)
+        if (Input.GetButtonDown("360_Y") && !swapping)
         {
             sortInventory();
             updateDetails();
@@ -107,7 +106,7 @@ public class InventoryController : MonoBehaviour
 
     void swapItems()
     {
-        if (selectedSlot.childCount >= 2 || originalItem!=null)
+        if (selectedSlot.childCount >= 2 || originalItem != null)
         {
             if (originalItem != null)
             {
@@ -174,10 +173,10 @@ public class InventoryController : MonoBehaviour
 
     void dropItem()
     {
-        if(selectedSlot.childCount >= 2)
+        if (selectedSlot.childCount >= 2)
         {
             Item item = selectedSlot.GetChild(1).GetComponent<Item>();
-            if(item.amount <= 1)
+            if (item.amount <= 1)
             {
                 Destroy(selectedSlot.GetChild(1).gameObject);
             }
@@ -193,15 +192,15 @@ public class InventoryController : MonoBehaviour
     void sortInventory()
     {
         moveItemsToBeginning();
-        for(int i=slotArray.Length; i>1; i--)
+        for (int i = slotArray.Length; i > 1; i--)
         {
-            for(int j=0; j<i-1; j++)
+            for (int j = 0; j < i - 1; j++)
             {
                 Transform cur = slotArray[j].transform;
                 Transform next = slotArray[j + 1].transform;
-                if(cur.childCount >= 2 && next.childCount >= 2)
+                if (cur.childCount >= 2 && next.childCount >= 2)
                 {
-                    if(cur.GetChild(1).GetComponent<Item>().id > next.GetChild(1).GetComponent<Item>().id)
+                    if (cur.GetChild(1).GetComponent<Item>().id > next.GetChild(1).GetComponent<Item>().id)
                     {
                         swapItems(cur, next);
                     }
@@ -213,10 +212,10 @@ public class InventoryController : MonoBehaviour
 
     void moveItemsToBeginning()
     {
-        int emptySlot = firstEmptySlot(); 
-        if (emptySlot != -1) 
+        int emptySlot = firstEmptySlot();
+        if (emptySlot != -1)
         {
-            for (int i = slotArray.Length-1; i >= 0; i--)
+            for (int i = slotArray.Length - 1; i >= 0; i--)
             {
                 if (slotArray[i].transform.childCount >= 2)
                 {
@@ -252,7 +251,7 @@ public class InventoryController : MonoBehaviour
         currentSlot = (currentSlot + by * pageSize + pageSize * pages) % (pageSize * pages);
         selectedSlot = slotArray[currentSlot].transform;
         selectedSlot.transform.GetChild(0).gameObject.SetActive(true);
-        transform.GetChild(0).GetChild(3).GetComponent<Text>().text = "Inventory " + (currentPage+1) + "/" + pages;
+        transform.GetChild(0).GetChild(3).GetComponent<Text>().text = "Inventory " + (currentPage + 1) + "/" + pages;
         updateDetails();
     }
 
@@ -370,6 +369,18 @@ public class InventoryController : MonoBehaviour
         return -1;
     }
 
+    public int nextItem(int current, int dir)
+    {
+        for (int i = 0; i < slotArray.Length; i++)
+        {
+            if (slotArray[(i*dir + current + slotArray.Length) % slotArray.Length].transform.childCount >= 2)
+            {
+                return slotArray[(i*dir + current + slotArray.Length) % slotArray.Length].GetComponent<SlotController>().position;
+            }
+        }
+        return -1;
+    }
+
     void initializeVariables()
     {
         ic = ItemContainer.Load(path);
@@ -382,7 +393,7 @@ public class InventoryController : MonoBehaviour
             dict.Add(item.itemName, item.id);
         }
         slotArray = new GameObject[pageSize * pages];
-        originalColor = new Color(38/255f, 35/255f, 35/255f, 143/255f);
+        originalColor = new Color(38 / 255f, 35 / 255f, 35 / 255f, 143 / 255f);
     }
 
     void createSlots()
