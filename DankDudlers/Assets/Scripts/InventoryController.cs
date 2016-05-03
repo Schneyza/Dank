@@ -7,6 +7,7 @@ public class InventoryController : MonoBehaviour
 {
     //Variables that need to be set in editor
     public GameObject slotPrefab, itemPrefab;
+    public QuickInventoryController quickInventory;
     public Image detailSprite;
     public Text detailDescription;
     public Text detailRarity;
@@ -41,8 +42,8 @@ public class InventoryController : MonoBehaviour
         createSlots();
         addItem("Potion");
         addItem("Mega Potion", 5);
-        addItem(2);
-        addItem(100, 4);
+        //addItem(2);
+        //addItem(100, 4);
         //fill inventory with dummy items
         for (int i = 100; i < 124; i++)
         {
@@ -50,6 +51,7 @@ public class InventoryController : MonoBehaviour
         }
 
         updateDetails();
+
     }
     // Use this for initialization
     void Start()
@@ -115,6 +117,7 @@ public class InventoryController : MonoBehaviour
                     if (selectedSlot.childCount < 2)
                     {
                         moveItemToEmptySlot(originalSlot, selectedSlot);
+                        quickInventory.selectedSlot.GetComponent<SlotController>().position = selectedSlot.GetComponent<SlotController>().position;
                         originalSlot.GetComponent<Image>().color = originalColor;
                         originalSlot = null;
                         originalItem = null;
@@ -122,6 +125,7 @@ public class InventoryController : MonoBehaviour
                     }
                     else {
                         swapItems(originalSlot, selectedSlot);
+                        quickInventory.selectedSlot.GetComponent<SlotController>().position = selectedSlot.GetComponent<SlotController>().position;
                         originalSlot.GetComponent<Image>().color = originalColor;
                         originalSlot = null;
                         originalItem = null;
@@ -310,6 +314,10 @@ public class InventoryController : MonoBehaviour
                 item.GetComponent<Image>().sprite = i.sprite;
                 item.transform.GetChild(0).GetComponent<Text>().text = i.itemName;
                 item.transform.GetChild(1).GetComponent<Text>().text = i.amount.ToString();
+                if (quickInventory.created)
+                {
+                    quickInventory.createItems(quickInventory.selectedSlot.GetComponent<SlotController>().position);
+                }
             }
             else
             {
@@ -371,14 +379,33 @@ public class InventoryController : MonoBehaviour
 
     public int nextItem(int current, int dir)
     {
-        for (int i = 0; i < slotArray.Length; i++)
+        if (!isEmpty())
         {
-            if (slotArray[(i*dir + current + slotArray.Length) % slotArray.Length].transform.childCount >= 2)
+            for (int i = 0; i < slotArray.Length; i++)
             {
-                return slotArray[(i*dir + current + slotArray.Length) % slotArray.Length].GetComponent<SlotController>().position;
+                if (((i * dir + current + slotArray.Length + 1) % (slotArray.Length + 1)) == 24)
+                {
+                    return 24;
+                }
+                else if (slotArray[(i * dir + current + slotArray.Length + 1) % (slotArray.Length + 1)].transform.childCount >= 2)
+                {
+                    return slotArray[(i * dir + current + slotArray.Length + 1) % (slotArray.Length + 1)].GetComponent<SlotController>().position;
+                }
             }
         }
-        return -1;
+        return 24;
+    }
+
+    public bool isEmpty()
+    {
+        for (int i = 0; i < slotArray.Length; i++)
+        {
+            if (slotArray[i].transform.childCount >= 2)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     void initializeVariables()
