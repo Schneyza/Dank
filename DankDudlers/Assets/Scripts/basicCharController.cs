@@ -25,6 +25,7 @@ public class basicCharController : MonoBehaviour {
     bool roll = false;
     bool rightBumper;           //blocking or sprinting
     bool moveable = true;       //can character move and rotate?
+    public bool canAttack = true;
 
     // Use this for initialization
     void Start () {
@@ -44,7 +45,10 @@ public class basicCharController : MonoBehaviour {
         {
             HandleMovAndRot();
         }
-        HandleWeapon(); 
+        if (canAttack)
+        {
+            HandleWeapon();
+        }
     }
 
     void FixedUpdate()

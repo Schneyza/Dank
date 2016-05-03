@@ -55,9 +55,14 @@ public class QuickInventoryController : MonoBehaviour
         RectTransform[] result = new RectTransform[slotcount];
         for (int i = 0; i < slots.Length; i++)
         {
-            StartCoroutine(waitForLerp(slots[i], slotPositions[(i + 1 + slotcount) % slotcount]));
-            slots[i].sizeDelta = slotSizes[(i + 1 + slotcount) % slotcount];
-            result[(i + 1 + slotcount) % slotcount] = slots[i];
+            int newPos = (i + 1 + slotcount) % slotcount;
+            StartCoroutine(waitForLerp(slots[i], slotPositions[newPos]));
+            slots[i].sizeDelta = slotSizes[newPos];
+            if (slots[i].childCount >= 1)
+            {
+                slots[i].GetChild(0).GetComponent<RectTransform>().sizeDelta = new Vector2(slotSizes[newPos].x - 10, slotSizes[newPos].y - 10);
+            }
+            result[newPos] = slots[i];
         }
         orderSlotHierarchy(result);
         slots = result;
@@ -89,9 +94,14 @@ public class QuickInventoryController : MonoBehaviour
         RectTransform[] result = new RectTransform[slotcount];
         for (int i = 0; i < slots.Length; i++)
         {
-            StartCoroutine(waitForLerp(slots[i], slotPositions[(i + -1 + slotcount) % slotcount]));
-            slots[i].sizeDelta = slotSizes[(i + -1 + slotcount) % slotcount];
-            result[(i + -1 + slotcount) % slotcount] = slots[i];
+            int newPos = (i + -1 + slotcount) % slotcount;
+            StartCoroutine(waitForLerp(slots[i], slotPositions[newPos]));
+            slots[i].sizeDelta = slotSizes[newPos];
+            if(slots[i].childCount >= 1)
+            {
+                slots[i].GetChild(0).GetComponent<RectTransform>().sizeDelta = new Vector2(slotSizes[newPos].x - 10, slotSizes[newPos].y - 10);
+            }
+            result[newPos] = slots[i];
         }
         orderSlotHierarchy(result);
         slots = result;
@@ -222,6 +232,17 @@ public class QuickInventoryController : MonoBehaviour
         else
         {
             itemName.text = "No Item";
+        }
+    }
+
+    public void updateQuickAmounts()
+    {
+        for(int i=0; i<slots.Length; i++)
+        {
+            if(slots[i].GetComponent<SlotController>().position != 24 && !inventory.isEmpty())
+            {
+                slots[i].GetChild(0).GetChild(0).GetComponent<Text>().text = inventory.slotArray[slots[i].GetComponent<SlotController>().position].transform.GetChild(1).GetComponent<Item>().amount.ToString();
+            }
         }
     }
 

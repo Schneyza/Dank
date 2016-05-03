@@ -40,15 +40,15 @@ public class InventoryController : MonoBehaviour
 
         //create slots
         createSlots();
-        addItem("Potion");
-        addItem("Mega Potion", 5);
+        //addItem("Potion");
+        //addItem("Mega Potion", 5);
         //addItem(2);
         //addItem(100, 4);
         //fill inventory with dummy items
-        for (int i = 100; i < 124; i++)
-        {
-            addItem(i);
-        }
+        //for (int i = 100; i < 124; i++)
+        //{
+        //    addItem(i);
+        //}
 
         updateDetails();
 
@@ -328,6 +328,7 @@ public class InventoryController : MonoBehaviour
         {
             slotArray[curPos].transform.GetChild(1).GetComponent<Item>().amount += amount;
             slotArray[curPos].transform.GetChild(1).GetChild(1).GetComponent<Text>().text = slotArray[curPos].transform.GetChild(1).GetComponent<Item>().amount.ToString();
+            quickInventory.updateQuickAmounts();
         }
     }
 

@@ -4,22 +4,24 @@ using System.Collections;
 public class GameController : MonoBehaviour {
     public GameObject inventory;
     public GameObject quickInventory;
-    bool isActive;
+    public GameObject player;
+    bool inventoryActive;
 	// Use this for initialization
 	void Start () {
-        isActive = false;
-        inventory.SetActive(isActive);
-        quickInventory.SetActive(!isActive);
+        inventoryActive = false;
+        inventory.SetActive(inventoryActive);
+        quickInventory.SetActive(!inventoryActive);
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (Input.GetButtonDown("360_start"))
         {
-            isActive = !isActive;
-            inventory.SetActive(isActive);
-            quickInventory.SetActive(!isActive);
-            if (!isActive)
+            inventoryActive = !inventoryActive;
+            inventory.SetActive(inventoryActive);
+            quickInventory.SetActive(!inventoryActive);
+            player.GetComponent<basicCharController>().canAttack = !inventoryActive;
+            if (!inventoryActive)
             {
                 quickInventory.GetComponent<QuickInventoryController>().createItems(quickInventory.GetComponent<QuickInventoryController>().selectedSlot.GetComponent<SlotController>().position);
             }
